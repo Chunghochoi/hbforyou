@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="backgroundMusic" loop>
+        <source src="music/background_music.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát âm thanh.
+    </audio>
+
+    <div class="screen initial-screen" id="initialScreen">
+        <div class="birthday-card">
+            <img src="images/banner.png" alt="Happy Birthday Banner" class="banner">
+            <img src="images/balloons.png" alt="Balloons" class="balloons-left">
+            <img src="images/balloons.png" alt="Balloons" class="balloons-right">
+            <h1 class="happy-birthday-text">Happy Birthday</h1>
+            <img src="images/cake.png" alt="Cake" class="cake">
+            <img src="images/confetti-popper.png" alt="Confetti Popper" class="popper-left">
+            <img src="images/confetti-popper.png" alt="Confetti Popper" class="popper-right">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="text-overlays">
+                <p id="textOverlay1" class="text-overlay">Ngoan nghe chưa</p>
+                <p id="textOverlay2" class="text-overlay">Sinh nhật vui vẻ!</p>
+            </div>
+            <div class="envelope-icon" id="envelopeIcon">
+                <img src="images/envelope.png" alt="Envelope">
+            </div>
+        </div>
+    </div>
+
+    <div class="screen name-input-popup" id="nameInputPopup">
+        <div class="popup-content">
+            <h2>Nhập tên của bạn</h2>
+            <input type="text" id="userNameInput" placeholder="Nhập tên">
+            <button id="confirmNameBtn">Xác nhận</button>
+        </div>
+    </div>
+
+    <div class="screen main-content" id="mainContent">
+        <div class="grid-background"></div>
+        <div class="birthday-elements">
+            <h1 class="main-happy-birthday-text">Happy Birthday</h1>
+            <img src="images/party-hat.png" alt="Party Hat" class="party-hat">
+            <div class="date-info">
+                <span class="star">★</span> <span id="birthDate">17 - 12 - 2005</span> <span class="star">★</span>
+            </div>
+            <div class="emoji-smile">🙂</div>
+            <img src="images/balloon-pink-1.png" alt="Pink Balloon" class="balloon-pink-main-1">
+            <img src="images/balloon-pink-2.png" alt="Pink Balloon" class="balloon-pink-main-2">
+            <div class="profile-container">
+                <img src="images/tidi-ng.png" alt="TiDi Ng" class="profile-pic">
+            </div>
+            <div class="tidi-name">TiDi Ng ❤️</div>
+            <p id="statusMessage" class="status-message">Đã nghiện còn ngại!))) 🫶</p>
+            <div class="message-icon" id="messageIcon">✉️</div>
+        </div>
+    </div>
+
+    <div class="screen message-popup" id="messagePopup">
+        <div class="popup-content">
+            <span class="close-popup" id="closeMessagePopup">&times;</span>
+            <h2 id="messagePopupTitle">Gửi <span id="recipientName"></span> ❤️</h2>
+            <div class="postcard">
+                <img src="images/heart-arrow.png" alt="Heart with Arrow" class="heart-arrow">
+                <div class="stamp">
+                    <img src="images/love-stamp.png" alt="Love Stamp">
+                </div>
+                <p id="birthdayMessage">
+                    Gửi <span id="messageRecipientName"></span>! Hôm nay là sinh nhật của tôi, mong bạn sẽ dành chút thời gian quý báu đến chung vui cùng tôi trong ngày đặc biệt này. Sự hiện diện của bạn sẽ là món quà ý nghĩa nhất giúp buổi tiệc thêm phần trọn vẹn và đáng nhớ. Điều ước của tôi là mong kiếm được người yêu tôi!!!
+                </p>
+                <img src="images/message-icon-small.png" alt="Message Icon" class="message-icon-small">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
