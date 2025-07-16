@@ -4,13 +4,29 @@
         <title>Happy Birthday</title>
         <script type="text/javascript">
     setTimeout(function() {
-        window.location.href = 'https://chunghochoi.github.io/album/';
+        window.location.href = 'https://love.tsonit.com/iloveyou-123456895';
     }, 31000);
+
+    function enterFullscreen() {
+      const element = document.documentElement; // Get the root element (html)
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) { /* Firefox */
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) { /* IE/Edge */
+        element.msRequestFullscreen();
+      }
+    }
+
+    window.onload = function() {
+      enterFullscreen();
+    };
 </script>
         <link rel="Shortcut Icon" href="https://i.pinimg.com/236x/a5/20/de/a520deb545fea9b62776e6bea5d77928.jpg" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
         <style>
             html {
                 height: 100%;
